@@ -58,26 +58,26 @@
 
 //对象的访问器属性，包含getter和setter，同样有四大特性configurable，enumerable，get,set
 //访问器属性是不能直接定义的，必须使用 Object.defineProperty()
-let person={age:18};
-//同时定义多个属性，可以用Object.defineProperties(object,{属性对象})
-//使用Object.getOwnPropertyDescriptor(object，属性名)返回指定属性的特性值
-//使用Object.getOwnPropertyDescriptors(object)返回对象object所有属性的特性值集合
-Object.defineProperty(person,'name',{
-    //常用get,set特性读写属性值
-    get(){
-        return this.age;
-    },
-    set(newName){
-        if(newName!=='tom'){
-            this.age=19;
-        }
-    }
-});
-console.log(person.name);//18(调用get)
-person.name='timi';//(调用set)
-console.log(person.name);//19
-console.log(person.age);//19
-console.log(Object.getOwnPropertyDescriptors(person));
+// let person={age:18};
+// //同时定义多个属性，可以用Object.defineProperties(object,{属性对象})
+// //使用Object.getOwnPropertyDescriptor(object，属性名)返回指定属性的特性值
+// //使用Object.getOwnPropertyDescriptors(object)返回对象object所有属性的特性值集合
+// Object.defineProperty(person,'name',{
+//     //常用get,set特性读写属性值
+//     get(){
+//         return this.age;
+//     },
+//     set(newName){
+//         if(newName!=='tom'){
+//             this.age=19;
+//         }
+//     }
+// });
+// console.log(person.name);//18(调用get)
+// person.name='timi';//(调用set)
+// console.log(person.name);//19
+// console.log(person.age);//19
+// console.log(Object.getOwnPropertyDescriptors(person));
 // {
 //     age: { value: 19, writable: true, enumerable: true, configurable: true },
 //     name: {
