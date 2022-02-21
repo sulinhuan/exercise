@@ -88,7 +88,7 @@
 //   }
 
 
-//组合模式（伪经典模式）继承，利用构造函数和原型链
+//es5组合模式（伪经典模式）继承，利用构造函数和原型链
 // function Person(name){
 //     this.name = name;
 //     this.height= ["18", "19", "20"];
@@ -120,7 +120,7 @@
 
 //es5对象的继承，Object.create()创建一个新对象，指定其原型对象和属性
 // let Person={name:'tom'};
-// let obj=Object.create(Person);//传入第二个参数与Object.defineProperties一样，设置shux
+// let obj=Object.create(Person);//传入第二个参数与Object.defineProperties一样，设置obj的额外属性
 // console.log(obj.name);//tom
 // console.log(Object.getPrototypeOf(obj)===Person);//true
 
@@ -131,6 +131,7 @@
 //     // 添加到 this 的所有内容都会存在于不同的实例上
 //         this.name=name;
 //         this.age=age;
+       // 定义在类的实例对象上
 //         this.locate = () => console.log('instance', this);
 //     }
 //    // 定义在类的原型对象上
