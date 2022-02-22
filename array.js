@@ -25,3 +25,9 @@
 // console.log(arr.sort((a,b)=>a-b));//[1,3,4,10,23]
 
 
+//find和findIndex以及filter,传入测试函数进行筛选
+// let arr=[1,2,3,2,2,4];
+// console.log(arr.find(item=>item>2));//3
+// console.log(arr.findIndex(item=>item>2));//2
+// console.log(arr.filter(item=>item>2));//[3,4]
+

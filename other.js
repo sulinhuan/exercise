@@ -122,3 +122,22 @@
 // }
 
 
+//逻辑运算与位运算
+//与
+// var a=25,b=3,c=0;
+// console.log(a&b);//1
+// console.log(a&c);//0
+//   //短路操作符，第一个操作数求值为false，第二个操作数就不会再被求值了,返回结果按照规则来
+// console.log(a&&b);//3
+// //或
+// console.log(a|b);//27
+//   //短路操作符，第一个操作数求值为true，第二个操作数就不会再被求值了,返回结果按照规则来
+// console.log(a||b);//25
+// //非
+// console.log(~b);//取反减一 -4
+// console.log(!b);//false
+// //异或
+// console.log(a^b);//26
+
+
+

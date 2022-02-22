@@ -1,4 +1,4 @@
-//跟踪属性访问
+//跟踪属性访问,target:目标对象,property:引用的目标对象上的字符串键属性,receiver:代理对象或继承代理对象的对象
 // const user = {
 //     name: 'Jake'
 // };
