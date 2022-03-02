@@ -134,10 +134,19 @@
 //   //短路操作符，第一个操作数求值为true，第二个操作数就不会再被求值了,返回结果按照规则来
 // console.log(a||b);//25
 // //非
+// var a=25.25;
+// console.log(~~a);//25,用于取整
+// console.log(~~a/10);//2.5
+// console.log(~~(a/10));//2
 // console.log(~b);//取反减一 -4
 // console.log(!b);//false
 // //异或
 // console.log(a^b);//26
-
+// let a=1,b=2;
+// a^=b;
+// b^=a;
+// a^=b;
+// console.log(a);//2
+// console.log(b);//1
 
 
