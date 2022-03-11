@@ -149,4 +149,20 @@
 // console.log(a);//2
 // console.log(b);//1
 
+//可选链操作?. ?? ??=
+// //可选链操作符( ?. )允许读取位于连接对象链深处的属性的值，而不必明确验证链中的每个引用是否有效
+// //在引用为空(null 或者 undefined) 的情况下不会引起错误，该表达式短路返回值是 undefined
+// let a={name:'tom',age:18};
+// console.log(a.age);//18
+// console.log(a?.age);//18
+// console.log(a.ge.a);//TypeError: Cannot read property 'a' of undefined
+// console.log(a.ge?.a);//undefined
+// //空值合并操作符（??）是一个逻辑操作符，当左侧的操作数为 null 或者 undefined 时，返回其右侧操作数，否则返回左侧操作数
+// let a=1,b=0,c;
+// console.log(b||a);//1
+// console.log(b??a);//0
+// console.log(c||a);//1
+// console.log(c??a);//1
+//逻辑空赋值运算符(x??=y)仅在x是null或undefined时对其赋值
+
 
