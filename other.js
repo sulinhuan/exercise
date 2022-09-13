@@ -165,6 +165,111 @@
 // console.log(c??a);//1
 //逻辑空赋值运算符(x??=y)仅在x是null或undefined时对其赋值
 
+// 防抖实现 debounce
+// function debounce (func,time = 500,immediate = false) {
+//     if (immediate) {
+//         return immediateDebounce(func,time)
+//     } else {
+//         return delayDebounce(func,time)
+//     }
+// }
+// function immediateDebounce (func,time) {
+//     let flag = true
+//     let timer = null 
+//     return function (...args) {
+//         if (flag) {
+//             flag = false
+//             return func.apply(this,args)
+//         }
+//         if (timer) {
+//             clearTimeout(timer)
+//         }
+//         return timer = setTimeout(()=>{
+//             flag = true
+//         },time)
+//     }
+// }
+// function delayDebounce (func,time) {
+//     let timer = null
+//     return function (...args) {
+//         if (timer) {
+//             clearTimeout(timer)
+//         }
+//         return timer = setTimeout(()=>{
+//             func.apply(this,args)
+//         },time)
+//     }
+// }
+// const click = () => {
+//     console.log('666666666')
+// }
+// debounce(click,4000,true)
 
-99999999999999999999999
-88888888888888888
+// dfs,bfs
+// const tree = {
+//     val: 1,
+//     left: {
+//         val: 2,
+//         left: null,
+//         right: {
+//             val: 4,
+//             left: null,
+//             right: {
+//                 val: 7,
+//                 left: null,
+//                 right: {
+//                     val: 8,
+//                     left: null,
+//                     right: null
+//                 }
+//             }
+//         }
+//     },
+//     right: {
+//         val: 3,
+//         left: {
+//             val: 5,
+//             left: null,
+//             right: null
+//         },
+//         right: {
+//             val: 6,
+//             left: null,
+//             right: null
+//         }
+//     }
+// }
+// function dfs(node) {
+//     if(!node) {
+//         return
+//     }
+//     console.log(node.val)
+//     dfs(node.left)
+//     dfs(node.right)
+// }
+// dfs(tree)
+// function bfs(root) {
+//     if(!root){
+//         return []
+//     }
+//     let res = []
+//     let quene = [root]
+//     while(quene.length){
+//         let currentLevel = []
+//         let len = quene.length
+//         for(let i = 0;i< len;i++){
+//             let node = quene.shift()
+//             currentLevel.push(node.val)
+//             console.log(node.val)
+//             if(node.left) {
+//                 quene.push(node.left)
+//             }
+//             if(node.right) {
+//                 quene.push(node.right)
+//             }
+//         }
+//         res.push(currentLevel)
+//     }
+//     return res
+// }
+// console.log(bfs(tree))
